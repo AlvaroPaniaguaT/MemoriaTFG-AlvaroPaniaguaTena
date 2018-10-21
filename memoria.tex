@@ -47,8 +47,8 @@
 \begin{titlepage}
 \begin{center}
 \begin{tabular}[c]{c c}
-%\includegraphics[bb=0 0 194 352, scale=0.25]{logo} &
-\includegraphics[scale=0.25]{img/logo_vect.png} &
+%\includegraphics[bb=0 0 194 352, scale=0.25]{logo} 
+%\includegraphics[scale=0.25]{img/logo_vect.png} &
 \begin{tabular}[b]{l}
 \Huge
 \textsf{UNIVERSIDAD} \\
@@ -61,16 +61,16 @@
 \vspace{3cm}
 
 \Large
-TITULACIÓN EN MAYÚSCULAS
+INGENIERÍA EN SISTEMAS AUDIOVISUALES Y MULTIMEDIA
 
 \vspace{0.4cm}
 
 \large
-Curso Académico 20XX/20XX
+Curso Académico 2018/2019
 
 \vspace{0.8cm}
 
-Trabajo Fin de Grado/Máster
+Trabajo Fin de Grado
 
 \vspace{2.5cm}
 
@@ -80,8 +80,8 @@ TÍTULO DEL TRABAJO EN MAYÚSCULAS
 \vspace{4cm}
 
 \large
-Autor : Nombre del Alumno/a \\
-Tutor : Dr. Gregorio Robles
+Autor : Álvaro Paniagua Tena \\
+Tutor : Dr. Jose María Cañas Plaza
 \end{center}
 \end{titlepage}
 
@@ -99,7 +99,7 @@ Tutor : Dr. Gregorio Robles
 \vspace{-4cm}
 \begin{center}
 \LARGE
-\textbf{Trabajo Fin de Grado/Máster}
+\textbf{Trabajo Fin de Grado}
 
 \vspace{1cm}
 \large
@@ -107,8 +107,8 @@ Título del Trabajo con Letras Capitales para Sustantivos y Adjetivos
 
 \vspace{1cm}
 \large
-\textbf{Autor :} Nombre del Alumno/a \\
-\textbf{Tutor :} Dr. Gregorio Robles Martínez
+\textbf{Autor :} Álvaro Paniagua Tena \\
+\textbf{Tutor :} Dr. Jose María Cañas Plaza
 
 \end{center}
 
@@ -145,7 +145,7 @@ Fuenlabrada, a \qquad$\;\,$ de \qquad\qquad\qquad\qquad de 20XX
 \pagenumbering{Roman} % para comenzar la numeracion de paginas en numeros romanos
 \begin{flushright}
 \textit{Dedicado a \\
-mi familia / mi abuelo / mi abuela}
+mis padres, familia, y a mi pareja Cristina}
 \end{flushright}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -153,10 +153,13 @@ mi familia / mi abuelo / mi abuela}
 
 \chapter*{Agradecimientos}
 %\addcontentsline{toc}{chapter}{Agradecimientos} % si queremos que aparezca en el índice
-\markboth{AGRADECIMIENTOS}{AGRADECIMIENTOS} % encabezado 
+\markboth{AGRADECIMIENTOS}{AGRADECIMIENTOS} % encabezado
 
-Aquí vienen los agradecimientos\ldots Aunque está bien acordarse de la pareja, no hay que olvidarse de dar las gracias a tu madre, que aunque a veces no lo parezca disfrutará tanto de tus logros como tú\ldots 
-Además, la pareja quizás no sea para siempre, pero tu madre sí.
+En primer lugar dar las gracias a mis padres por apoyarme y animarme desde el primer momento. También agradecer a mis compañeros Roberto, Ángel y Ahmed por tantas horas de ayuda y clases particulares para que entendiese todo bien.
+
+Gracias tambien a Jose María Cañas por darme la oportunidad de colaborar en el proyecto.
+
+Por último dar las gracias a mi pareja Cristina, has sido un gran apoyo en estos últimos años y sin duda me has motivado a hacer mejor las cosas.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Resumen
@@ -165,7 +168,7 @@ Además, la pareja quizás no sea para siempre, pero tu madre sí.
 %\addcontentsline{toc}{chapter}{Resumen} % si queremos que aparezca en el índice
 \markboth{RESUMEN}{RESUMEN} % encabezado
 
-Aquí viene un resumen del proyecto. Ha de constar de tres o cuatro párrafos, donde se presente de manera clara y concisa de qué va el proyecto. 
+Aquí viene un resumen del proyecto. Ha de constar de tres o cuatro párrafos, donde se presente de manera clara y concisa de qué va el proyecto.
 Han de quedar respondidas las siguientes preguntas:
 
 \begin{itemize}
@@ -199,7 +202,7 @@ just before submitting.
 % y comentar/descomentar esa instrucción de LaTeX.
 
 %%%% Índice de contenidos
-\tableofcontents 
+\tableofcontents
 %%%% Índice de figuras
 \cleardoublepage
 %\addcontentsline{toc}{chapter}{Lista de figuras} % para que aparezca en el indice de contenidos
@@ -217,89 +220,41 @@ just before submitting.
 
 \cleardoublepage
 \chapter{Introducción}
-\label{sec:intro} % etiqueta para poder referenciar luego en el texto con ~\ref{sec:intro}
+\label{chap:intro} % etiqueta para poder referenciar luego en el texto con ~\ref{sec:intro}
 \pagenumbering{arabic} % para empezar la numeración de página con números
 
-En este capítulo se introduce el proyeto. Debería tener información general sobre el mismo, dando la información sobre el contexto en el que se ha desarrollado.
+Este Trabajo Fin de Grado tiene como objetivo la creación de una herramienta de simulación de robots para la plataforma JdeRobot Kids.
 
-No te olvides de echarle un ojo a la página con los cinco errores de escritura más frecuentes\footnote{\url{http://www.tallerdeescritores.com/errores-de-escritura-frecuentes}}.
+\section{Contexto}
+\label{sec:contexto}
 
-Aconsejo a todo el mundo que mire y se inspire en memorias pasadas. Las mías están todas almacenadas en mi web del GSyC\footnote{\url{https://gsyc.urjc.es/~grex/pfcs/}}.
 
-\section{Sección}
-\label{sec:seccion}
+\subsection{Motivación}
+\label{subsec:motivacion}
 
-Esto es una sección, que es una estructura menor que un capítulo. 
+La motivación de este proyecto es la de sustituir el presente simulador Gazebo por WebSim, un simulador desarrollado íntegramente con tecnologías Web con peso en el lado cliente lo que permite escalar el número de usuarios que lo utilizan de manera simultánea.
 
-Por cierto, a veces me comentáis que no os compila por las tildes.
-Eso es un problema de codificación.
-Cambiad de ``UTF-8'' a ``ISO-Latin-1'' (o vicecersa) y funcionará.
+\subsection{Motivación personal}
+\label{subsec:motivacion_personal}
 
-\subsection{Estilo}
-\label{subsec:estilo}
+Como motivación personal, decir que desde el inicio del grado me ha gustado el mundo de la programación y el desarrollo, en concreto el desarrollo web.
 
-Recomiendo leer los consejos prácticos sobre LaTeX de Diomidos 
-Spinellis\footnote{\url{https://github.com/dspinellis/latex-advice}}.
+Además, me gusta poder ayudar al aprendizaje de los demás por tanto este proyecto creo que encaja a la perfección con ambos puntos.
 
-Sobre el uso de las comas\footnote{\url{http://narrativabreve.com/2015/02/opiniones-de-un-corrector-de-estilo-11-recetas-para-escribir-correctamente-la-coma.html}}
 
-A continuación, viene una figura, la Figura~\ref{figura:foro_hilos}. 
-Observarás que el texto dentro del a referencia es el identificador de la figura (que se corresponden con el ``label'' dentro de la misma). 
-También habrás tomado nota de cómo se ponen las ``comillas dobles'' para que se muestren correctamente. 
-Volviendo a las referencias, nota que al compilar, la primera vez se crea un diccionario con las referencias, y en la segunda compilación se ``rellenan'' estas referencias. 
-Por eso hay que compilar dos veces.
-
- \begin{figure}
-    \centering
-    \includegraphics[bb=0 0 800 600, width=12cm, keepaspectratio]{img/foro1}
-    \caption{Página con enlaces a hilos}
-    \label{figura:foro_hilos}
- \end{figure}
-
-{\footnotesize
-\begin{verbatim}
-    From gaurav at gold-solutions.co.uk  Fri Jan 14 14:51:11 2005
-    From: gaurav at gold-solutions.co.uk (gaurav_gold)
-    Date: Fri Jan 14 19:25:51 2005
-    Subject: [Mailman-Users] mailman issues
-    Message-ID: <003c01c4fa40$1d99b4c0$94592252@gaurav7klgnyif>
-
-    Dear Sir/Madam,
-    How can people reply to the mailing list?  How do i turn off
-    this feature? How can i also enable a feature where if someone
-    replies the newsletter the email gets deleted?
-    Thanks
-
-    From msapiro at value.net  Fri Jan 14 19:48:51 2005
-    From: msapiro at value.net (Mark Sapiro)
-    Date: Fri Jan 14 19:49:04 2005
-    Subject: [Mailman-Users] mailman issues
-    In-Reply-To: <003c01c4fa40$1d99b4c0$94592252@gaurav7klgnyif>
-    Message-ID: <PC173020050114104851057801b04d55@msapiro>
-
-    gaurav_gold wrote:
-    >How can people reply to the mailing list?  How do i turn off
-    this feature? How can i also enable a feature where if someone
-    replies the newsletter the email gets deleted?
-
-    See the FAQ
-    >Mailman FAQ: http://www.python.org/cgi-bin/faqw-mm.py
-    article 3.11
-\end{verbatim}
-}
 
 \section{Estructura de la memoria}
 \label{sec:estructura}
 
-En esta sección se debería introducir la esctura de la memoria. Así:
+En esta sección se detalla la esctura de la memoria que constará de las siguientes partes:
 
 \begin{itemize}
-  \item En el primer capítulo se hace una intro al proyecto.
-  
-  \item En el capítulo~\ref{chap:objetivos} (ojo, otra referencia automática) se muestran los objetivos del proyecto.
-  
-  \item A continuación se presenta el estado del arte.
-  
+  \item El capítulo~\ref{chap:intro} es una introducción al proyecto donde se explica la motivación del proyecto y la motivación personal.
+
+  \item En el capítulo~\ref{chap:objetivos} se muestran los objetivos a completar para la elaboración del proyecto y la estructura del "roadmap".
+
+  \item En el capítulo
+
   \item \ldots
 \end{itemize}
 
@@ -315,67 +270,58 @@ En esta sección se debería introducir la esctura de la memoria. Así:
 \label{chap:objetivos} % identificador del capítulo (no se muestra, es para poder referenciarlo)
 
 \section{Objetivo general} % título de sección (se muestra)
-\label{sec:objetivo-general} % identificador de sección (no se muestra, es para poder referenciarla)
+\label{sec:objetivo_general} % identificador de sección (no se muestra, es para poder referenciarla)
 
 Aquí vendría el objetivo general en una frase:
-Mi trabajo fin de grado consiste en crear de una herramienta de análisis de los comentarios jocosos en repositorios de software libre alojados en la plataforma GitHub.
-
-Recuerda que los objetivos siempre vienen en infinitivo.
+Mi trabajo fin de grado consiste en crear de una herramienta educativa para simulación de robots para la plataforma JdeRobot Kids.
 
 
 \section{Objetivos específicos}
-\label{sec:objetivos-especificos}
+\label{sec:objetivos_especificos}
 
 Los objetivos específicos se pueden entender como las tareas en las que se ha desglosado el objetivo general.
 Y, sí, también vienen en infinitivo.
 
 
 \section{Planificación temporal}
-\label{sec:planificacion-temporal}
+\label{sec:planificacion_temporal}
 
 A mí me gusta que aquí pongáis una descripción de lo que os ha llevado realizar el trabajo.
 Hay gente que añade un diagrama de GANTT.
 Lo importante es que quede claro cuánto tiempo llevas (tiempo natural, p.ej., 6 meses) y a qué nivel de esfuerzo (p.ej., principalmente los fines de semana).
 
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ESTADO DEL ARTE %
+% ESTADO DEL ARTE (FRAMEWORKS) %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\cleardoublepage
 \chapter{Estado del arte}
+\label{chap:estado_arte}
 
-Descripción de las tecnologías que utilizas en tu trabajo. 
-Con dos o tres párrafos por cada tecnología, vale. 
-Se supone que aquí viene todo lo que no has hecho tú.
+\section{JavaScript}
+\label{sec:javascript}
 
-Puedes citar libros, como el de Bonabeau et al. sobre procesos estigmérgicos~\cite{bonabeau:_swarm}. % Nota que el ~ añade un espacio en blanco, pero no deja que exista un salto de línea. Imprescindible ponerlo para las citas.
+\section{HTML}
+\label{sec:html}
 
-También existe la posibilidad de poner notas al pie de página, por ejemplo, una para indicarte que visite la página de LibreSoft\footnote{\url{http://www.libresoft.es}}.
+\section{AFRAME}
+\label{sec:aframe}
 
-\section{Sección 1} 
-\label{sec:seccion1}
+\section{ACE Editor}
+\label{sec:ace_editor}
 
-Hemos hablado de cómo incluir figuras.
-Pero no hemos dicho nada de tablas.
-A mí me gustan las tablas.
-Mucho.
-Aquí un ejemplo de tabla, la Tabla~\ref{tabla:ejemplo}.
+\section{Blockly}
+\label{sec:blockly}
 
-\begin{table}
- \begin{center}
-  \begin{tabular}{ | l | c | r |} % tenemos tres colummnas, la primera alineada a la izquierda (l), la segunda al centro (c) y la tercera a la derecha (r). El | indica que entre las columnas habrá una línea separadora.
-    \hline
-    1 & 2 & 3 \\ \hline % el hline nos da una línea vertical
-    4 & 5 & 6 \\ \hline
-    7 & 8 & 9 \\
-    \hline
-  \end{tabular}
-  \label{tabla:ejemplo}
-  \caption{Ejemplo de tabla}
- \end{center}
-\end{table}
+\section{jQuery}
+\label{sec:jquery}
+
+\section{CSS}
+\label{sec:css}
+
 
 
 
@@ -386,13 +332,14 @@ Aquí un ejemplo de tabla, la Tabla~\ref{tabla:ejemplo}.
 
 \cleardoublepage
 \chapter{Diseño e implementación}
+\label{chap:disenno}
 
-Aquí viene todo lo que has hecho tú (tecnológicamente). 
-Puedes entrar hasta el detalle. 
+Aquí viene todo lo que has hecho tú (tecnológicamente).
+Puedes entrar hasta el detalle.
 Es la parte más importante de la memoria, porque describe lo que has hecho tú.
 Eso sí, normalmente aconsejo no poner código, sino diagramas.
 
-\section{Arquitectura general} 
+\section{Arquitectura}
 \label{sec:arquitectura}
 
 Si tu proyecto es un software, siempre es bueno poner la arquitectura (que es cómo se estructura tu programa a ``vista de pájaro'').
@@ -408,18 +355,40 @@ Por ejemplo, puedes verlo en la figura~\ref{fig:arquitectura}.
 
 Si utilizas una base de datos, no te olvides de incluir también un diagrama de entidad-relación.
 
+\section{Objeto Robot}
+\label{sec:robot}
+
+\subsection{Motores}
+\label{subsec:motores}
+
+\subsection{Sensores}
+\label{subsec:sensores}
+
+\subsection{Cámara}
+\label{subsec:camara}
+
+\section{Interfaz}
+\label{sec:interfaz}
+
+\section{Funcionalidad del servidor}
+\label{sec:servidor}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% RESULTADOS %
+% USO DEL SIMULADOR %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cleardoublepage
-\chapter{Resultados}
+\chapter{Usos del simulador}
+\label{chap:usos}
 
-En este capítulo se incluyen los resultados de tu trabajo fin de grado.
+\section{Ejercicios JdeRobot Kids}
+\label{sec:ejercicios}
 
-Si es una herramienta de análisis lo que has realizado, aquí puedes poner ejemplos de haberla utilizado para que se vea su utilidad.
+\section{Robot real}
+\label{sec:robot_real}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -431,18 +400,17 @@ Si es una herramienta de análisis lo que has realizado, aquí puedes poner ejempl
 \chapter{Conclusiones}
 \label{chap:conclusiones}
 
-
-\section{Consecución de objetivos}
-\label{sec:consecucion-objetivos}
-
 Esta sección es la sección espejo de las dos primeras del capítulo de objetivos, donde se planteaba el objetivo general y se elaboraban los específicos.
 
-Es aquí donde hay que debatir qué se ha conseguido y qué no. 
+Es aquí donde hay que debatir qué se ha conseguido y qué no.
 Cuando algo no se ha conseguido, se ha de justificar, en términos de qué problemas se han encontrado y qué medidas se han tomado para mitigar esos problemas.
 
 
+\section{Valoración objetivo final}
+\label{sec:valoracion_objetivo_final}
+
 \section{Aplicación de lo aprendido}
-\label{sec:aplicacion}
+\label{sec:aplicacion_aprendido}
 
 Aquí viene lo que has aprendido durante el Grado/Máster y que has aplicado en el TFG/TFM. Una buena idea es poner las asignaturas más relacionadas y comentar en un párrafo los conocimientos y habilidades puestos en práctica.
 
@@ -452,8 +420,16 @@ Aquí viene lo que has aprendido durante el Grado/Máster y que has aplicado en el
 \end{enumerate}
 
 
-\section{Lecciones aprendidas}
-\label{sec:lecciones_aprendidas}
+\section{Mejoras futuras}
+\label{sec:mejoras_futuras}
+
+Ningún software se termina, así que aquí vienen ideas y funcionalidades que estaría bien tener implementadas en el futuro.
+
+Es un apartado que sirve para dar ideas de cara a futuros TFGs/TFMs.
+
+\section{Autovaloración del proyecto}
+\label{sec:autovaloracion}
+
 
 Aquí viene lo que has aprendido en el Trabajo Fin de Grado/Máster.
 
@@ -461,14 +437,6 @@ Aquí viene lo que has aprendido en el Trabajo Fin de Grado/Máster.
   \item a
   \item b
 \end{enumerate}
-
-
-\section{Trabajos futuros}
-\label{sec:trabajos_futuros}
-
-Ningún software se termina, así que aquí vienen ideas y funcionalidades que estaría bien tener implementadas en el futuro.
-
-Es un apartado que sirve para dar ideas de cara a futuros TFGs/TFMs.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -481,6 +449,8 @@ Es un apartado que sirve para dar ideas de cara a futuros TFGs/TFMs.
 \chapter{Manual de usuario}
 \label{app:manual}
 
+\chapter{Enlaces a tutoriales de uso}
+\label{app:tutoriales}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -497,7 +467,7 @@ Es un apartado que sirve para dar ideas de cara a futuros TFGs/TFMs.
 % que se conoce como BibTeX. Hay muchos sitios que exportan referencias en
 % formato BibTeX. Prueba a buscar en http://scholar.google.com por referencias
 % y verás que lo puedes hacer de manera sencilla.
-% Más información: 
+% Más información:
 % http://texblog.org/2014/04/22/using-google-scholar-to-download-bibtex-citations/
 
 \end{document}
